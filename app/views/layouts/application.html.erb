@@ -14,6 +14,18 @@
   </head>
 
   <body>
+    <nav class="yellow accent-4 z-depth-0" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="<%= root_path %>" class="brand-logo">Piratenstrasse</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="<%= root_path %>">Home</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="<%= root_path %>">Home</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
